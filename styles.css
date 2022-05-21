@@ -1,0 +1,115 @@
+body {
+  overflow-x: hidden;
+  background-color: antiquewhite !important;
+  position: relative;
+  line-height: 1em;
+}
+
+#myVideo {
+  width: 100%;
+}
+
+.test {
+  height: 25vh;
+  position: absolute;
+  top: 10vh;
+  left: 15vw;
+}
+
+.header {
+  font-family: 'Raleway', sans-serif;
+  color: #FAF0D7;
+  font-size: 3rem;
+}
+
+.contentDiv {
+  height: 20vh;
+  line-height: 5vh;
+  margin: 3% 0;
+}
+
+.content, p {
+  font-family: zen loop, cursive;
+  font-style: italic;
+  font-size: 5rem;
+  text-align: center;
+}
+
+p {
+  font-size: 3rem;
+}
+
+/* Header Animation */
+.slide {
+  display: block;
+  animation-duration: 6s;
+  animation-name: slidein;
+  font-size: 8rem;
+  font-family: zen loop, cursive;
+  color: #FFD9C0;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 300%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 200%;
+  }
+}
+
+/* parallax */
+.parallax {
+  min-width: 100%;
+  background-image: url('images/sunsetImage.jpg');
+  min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Videos from people */
+.pContainer, .footer {
+  padding: 2%;
+  text-align: center;
+  color: #FFD9C0;
+}
+
+.footer {
+  font-size: 0.3rem !important;
+  font-family: zen loop, cursive;
+}
+
+.arrow {
+  height: 3rem;
+  margin: 4%;
+}
+
+/* class to rotate image on click */
+.arrow.down {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  opacity: 0.9;
+}
+
+.arrow {
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.arrow.blur {
+  opacity: 0.2;
+}
+
+/* Hiding videos until clicked */
+.hidden {
+  opacity: 0;
+}
+
+#vinnyVid, #evVid, #boogVid, #donVid, #saraiVid, #pouisVid{
+  width: 25% !important;
+}
